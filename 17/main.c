@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Szescian(int szescian)
+int Szescian(int szescian, int szescian2)
 {
-    for (szescian=1;szescian<=10;szescian++)
+    for (szescian=szescian;szescian<=10;szescian++)
     {
         printf("%i\n",szescian*szescian*szescian);
     }
     /*------------------------*/
-    int szescian2=1;
 
     printf("\n");
     do
@@ -21,7 +20,7 @@ int Szescian(int szescian)
 
 int main()
 {
-    Szescian(1);
+    Szescian(1,1);
     return 0;
 }
 
