@@ -15,6 +15,7 @@ int main()
         a++;
     }while(a<20);
 
+    printf("\nOstatnia liczba w tablicy jest liczba: %i\n",LUCAS[19]);
 
     return 0;
 }
