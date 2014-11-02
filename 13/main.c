@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
@@ -67,6 +68,25 @@ int main()
         i=i*2;
         h++;
     }while(h<20);
+
+    /*-------------------------*/
+    printf("\n");
+    /*-------------------------*/
+    int j=0;
+    int k=0;
+    int TABF[20];
+    srand(time(0));
+    do
+    {
+        k=rand()%21;
+        if(k>0)
+        {
+            TABF[j]=k;
+            printf("%i\n",TABF[j]);
+            j++;
+        }
+    }while(j<20);
+
 
     return 0;
 }
