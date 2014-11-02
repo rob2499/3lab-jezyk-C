@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1414846070 source:c:\users\robo\desktop\programy c\6\main.c
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
