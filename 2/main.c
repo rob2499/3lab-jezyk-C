@@ -10,14 +10,14 @@ int main()
     long e= 292938834;
     /*---------------------------------------*/
     printf("Wiele wywolan printf: \n");
-    printf("%c\n",a);
-    printf("%.5f\n",b);
-    printf("%.2f\n",c);
-    printf("%i\n",d);
-    printf("%li\n",e);
+    printf("Zmienna char a = %c\n",a);
+    printf("Zmienna float b = %.5f\n",b);
+    printf("Zmienna double c = %.2f\n",c);
+    printf("Zmienna int d = %i\n",d);
+    printf("Zmienna long e = %li\n",e);
     /*---------------------------------------*/
     printf("\nJedno wywolanie printf: \n");
-    printf("%c\n%.5f\n%.2f\n%i\n%li\n",a,b,c,d,e);
+    printf("Zmienna char a = %c\nZmienna float b = %.5f\nZmienna double c = %.2f\nZmienna int d = %i\nZmienna long e = %li\n",a,b,c,d,e);
     return 0;
 }
 
