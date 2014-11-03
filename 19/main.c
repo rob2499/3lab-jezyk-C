@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int Piramida(int K)
 {
     if(K==0)
     {
         return 0;
     }
-    else
-    {
-        printf("*\n");
-        Piramida(K-1);
-    }
+    Piramida(K*K);
+    printf("*\n");
     return 0;
 }
 
