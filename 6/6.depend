@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1415043021 source:c:\users\robo\desktop\programy c\3lab-jezyk-c\6\main.c
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
