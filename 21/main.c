@@ -1,32 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double Praw(double A, double B)
+double Praw(double A, double B,double* w_o, double* w_d)
 {
-    double wynik_odejmowania;
-    double wynik_dodawania;
     if(A>B)
     {
-        wynik_odejmowania=A-B;
-        wynik_dodawania=A+B;
-        return wynik_odejmowania;
+        *w_o=A-B;
+        *w_d=A+B;
     }
     if(B>A)
     {
-        wynik_odejmowania=B-A;
-        wynik_dodawania=B+A;
-        return wynik_dodawania;
+        *w_o=B-A;
+        *w_d=B+A;
     }
     return 0;
 }
 
 int main()
 {
-    double A;
-    double B;
+    double A, B, w_o, w_d;
     printf("Podaj dwie liczby rzeczywiste: \n");
     scanf("%lf %lf", &A, &B);
-    printf("%lf",Praw(A,B));
+    Praw(A,B,&w_o,&w_d);
+    printf("Wynikiem odejmowania jest: %lf\nWynikiem dodawania jest: %lf",w_o,w_d);
     return 0;
 }
 
